@@ -70,7 +70,7 @@ const handleSubmit = async (e) => {
 
   loader(messageDiv);
 
-  const response = await fetch(process.env.REACT_BACKEND_URL, {
+  const response = await fetch("https://ai-solution-backend.onrender.com", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
